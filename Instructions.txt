@@ -1,1 +1,13 @@
 Defining the functionalities need for BMS
+
+1.Customer Account Creation
+
+2.Deposit and Withdrawal Functionalities
+
+3.Check balance 
+
+4.Transfer between the Accounts
+
+5. Transaction history
+
+6.Loan Management (Optional)
