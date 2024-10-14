@@ -14,12 +14,7 @@ public class SavingsAccount extends Account{
 	}
 	
 	//calculating the interest after deposit
-	public void applyInterest() {
-		double interest=getBalance()+(interestRate/100);
-		deposit(interest);
-		
-		System.out.println("Interest applied : " +interest);
-	}
+	
 	
 	@Override
 	public void withdraw(double amount) {
@@ -36,6 +31,13 @@ public class SavingsAccount extends Account{
 		
 	}
 	
+	// Method to calculate interest and add it to the balance
+    public void applyInterest() {
+        double interest = getBalance() * (interestRate / 100);
+        deposit(interest);
+        System.out.println("Interest of " + interest + " added. New balance: " + getBalance());
+   
+    }
 	
 	
 }

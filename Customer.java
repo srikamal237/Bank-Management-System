@@ -73,15 +73,17 @@ public class Customer {
 		return null;
 	}
 	
-	public void closeAccount(String accountNumber) {
-        Account account = getAccount(accountNumber);
-        if (account != null) {
-            accounts.remove(account);
-            System.out.println("Account " + accountNumber + " closed successfully.");
-        } else {
-            System.out.println("Account not found.");
-        }
-    }
+	
+	 public void closeAccount(String accountNumber) {
+	        Account account = getAccount(accountNumber);
+	        if (account != null) {
+	            accounts.remove(account);
+	            System.out.println("Account " + accountNumber + " closed successfully.");
+	        } else {
+	            System.out.println("Account not found.");
+	        }
+	    }
+	
 
 	
 	
